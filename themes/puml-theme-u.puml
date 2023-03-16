@@ -214,6 +214,10 @@ skinparam frame {
     $neutral_scheme()
 }
 
+skinparam activity {
+    $neutral_scheme()
+}
+
 skinparam actor {
     $neutral_scheme()
     Shadowing 0
