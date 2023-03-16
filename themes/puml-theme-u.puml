@@ -7,58 +7,118 @@
 
 !$THEME = "u"
 
-!if %not(%variable_exists("$BGCOLOR"))
-!$BGCOLOR = "transparent"
-!endif
-
-skinparam backgroundColor $BGCOLOR
-skinparam useBetaStyle false
+skinparam useBetaStyle true
 
 ''
 '' Colors taken from the css file of the BS theme
 ''
-!$BLUE = "#033C73"
-!$INDIGO = "#6610F2"
-!$PURPLE = "#6F42C1"
-!$PINK = "#E83E8C"
-!$RED = "#C71C22"
-!$ORANGE = "#FD7E14"
-!$YELLOW = "#DD5600"
-!$GREEN = "#73A839"
-!$TEAL = "#20C997"
-!$CYAN = "#2FA4E7"
-!$WHITE = "#FFF"
-!$GRAY_DARK = "#343A40"
-!$GRAY = "#868E96"
-!$PRIMARY = "#2FA4E7"
-!$SECONDARY = "#E9ECEF"
-!$SUCCESS = "#73A839"
-!$INFO = "#033C73"
-!$WARNING = "#DD5600"
-!$DANGER = "#C71C22"
-!$LIGHT = "#F8F9FA"
-!$DARK = "#343A40"
+!$PRIMARY0050 = "#DFF4F7"
+!$PRIMARY0100 = "#C0E9EF"
+!$PRIMARY0200 = "#95D3DC"
+!$PRIMARY0300 = "#6DBDC9"
+!$PRIMARY0400 = "#46A7B6"
+!$PRIMARY0500 = "#2291A2"
+!$PRIMARY0600 = "#007C8F" /' <- '/
+!$PRIMARY0700 = "#016372"
+!$PRIMARY0800 = "#014954"
+!$PRIMARY0900 = "#003037"
+!$PRIMARY1000 = "#001619"
 
-'' *_LIGHT = tint (lighter) of the main color of 80%
-''          where TINT is calculated by clr + (255-clr) * tint_factor
-'' *_DARK = shade (darker) of the main color of 80%
-''          and SHADE is calculated by clr * (1 - shade_factor)
-''
-!$FGCOLOR = $DARK
-!$PRIMARY_LIGHT = "#59B6EC"
-!$PRIMARY_DARK = "#2683B9"
-!$PRIMARY_TEXT = $PRIMARY
-!$SECONDARY_LIGHT = "#EDF0F2"
-!$SECONDARY_DARK = "#BABDBF"
-!$SECONDARY_TEXT = $SECONDARY_DARK
-!$INFO_LIGHT = "#35638F"
-!$INFO_TEXT = $INFO
-!$SUCCESS_LIGHT = "#8FB961"
-!$SUCCESS_TEXT = $SUCCESS
-!$WARNING_LIGHT = "#E47833"
-!$WARNING_TEXT = $WARNING
-!$DANGER_LIGHT = "#D2494E"
-!$DANGER_TEXT = $WHITE
+!$SECONDARY0050 = "#E9F9F7"
+!$SECONDARY0100 = "#D4F3F0"
+!$SECONDARY0200 = "#B1E2DD"
+!$SECONDARY0300 = "#8ED0C9"
+!$SECONDARY0400 = "#6BBFB6" /' <- '/
+!$SECONDARY0500 = "#54A39B"
+!$SECONDARY0600 = "#3C8880"
+!$SECONDARY0700 = "#256C65"
+!$SECONDARY0800 = "#12514A"
+!$SECONDARY0900 = "#063530"
+!$SECONDARY1000 = "#001917"
+
+!$TERNARY0050 = "#DEF6FE"
+!$TERNARY0100 = "#BDEDFD"
+!$TERNARY0200 = "#91D9F0"
+!$TERNARY0300 = "#64C5E4" /' <- '/
+!$TERNARY0400 = "#57ACC7"
+!$TERNARY0500 = "#4792AA"
+!$TERNARY0600 = "#33778D"
+!$TERNARY0700 = "#205C70"
+!$TERNARY0800 = "#104353"
+!$TERNARY0900 = "#052A36"
+!$TERNARY1000 = "#001319"
+
+!$STATUS_RED0500 = "#FFF6F5"
+!$STATUS_RED0100 = "#FFECEB"
+!$STATUS_RED0200 = "#FFD3D1"
+!$STATUS_RED0300 = "#FCB6B4"
+!$STATUS_RED0400 = "#F59794"
+!$STATUS_RED0500 = "#EF746F"
+!$STATUS_RED0600 = "#E84C46"
+!$STATUS_RED0700 = "#E22019" /' <- '/
+!$STATUS_RED0800 = "#9F110B"
+!$STATUS_RED0900 = "#5C0603"
+!$STATUS_RED1000 = "#190100"
+
+!$STATUS_GREEN0050 = "#F0FCF3"
+!$STATUS_GREEN0100 = "#E1F8E7"
+!$STATUS_GREEN0200 = "#C3E9CD"
+!$STATUS_GREEN0300 = "#A4DBB2"
+!$STATUS_GREEN0400 = "#84CC96"
+!$STATUS_GREEN0500 = "#62BD79" /' <- '/
+!$STATUS_GREEN0600 = "#469C5C"
+!$STATUS_GREEN0700 = "#2B7C3F"
+!$STATUS_GREEN0800 = "#155B26"
+!$STATUS_GREEN0900 = "#063A13"
+!$STATUS_GREEN1000 = "#001906"
+
+!$STATUS_YELLOW0050 = "#FFFFE3"
+!$STATUS_YELLOW0100 = "#FFFFC6"
+!$STATUS_YELLOW0200 = "#FFF299"
+!$STATUS_YELLOW0300 = "#FFE46A"
+!$STATUS_YELLOW0400 = "#FFD637"
+!$STATUS_YELLOW0500 = "#FFC700" /' <- '/
+!$STATUS_YELLOW0600 = "#D1A507"
+!$STATUS_YELLOW0700 = "#A38106"
+!$STATUS_YELLOW0800 = "#755C03"
+!$STATUS_YELLOW0900 = "#473800"
+!$STATUS_YELLOW1000 = "#191400"
+
+!$STATUS_ORANGE0050 = "#FFF7EF"
+!$STATUS_ORANGE0100 = "#FFEEDE"
+!$STATUS_ORANGE0200 = "#FFD7BE"
+!$STATUS_ORANGE0300 = "#FFBE9B"
+!$STATUS_ORANGE0400 = "#FCA374"
+!$STATUS_ORANGE0500 = "#F78549"
+!$STATUS_ORANGE0600 = "#F26419"
+!$STATUS_ORANGE0700 = "#BC4C11"
+!$STATUS_ORANGE0800 = "#863408"
+!$STATUS_ORANGE0900 = "#501D02"
+!$STATUS_ORANGE1000 = "#190900"
+
+!$NEUTRAL0025 = "#F9F9F9"
+!$NEUTRAL0050 = "#F2F3F4"
+!$NEUTRAL0100 = "#E6E8E8"
+!$NEUTRAL0200 = "#CCD0D1"
+!$NEUTRAL0300 = "#B1B9BA"
+!$NEUTRAL0400 = "#96A1A3"
+!$NEUTRAL0500 = "#7A8A8C"
+!$NEUTRAL0600 = "#5F7275"
+!$NEUTRAL0700 = "#465B5E"
+!$NEUTRAL0800 = "#2F4447"
+!$NEUTRAL0900 = "#1C2E30"
+!$NEUTRAL1000 = "#0D1819"
+
+'' -----------------------------------------------------------------------------
+
+!$BG_COLOR = $NEUTRAL0025
+!$FG_COLOR = $NEUTRAL0800
+!$TEXT = $NEUTRAL0800
+!$REVERSE_TEXT = $NEUTRAL0025
+
+!$SUCCESS = $STATUS_GREEN0500
+!$DANGER = $STATUS_RED0700
+!$WARNING = $STATUS_ORANG0500
 
 !procedure $success($msg)
   <font color=$SUCCESS><b>$msg
@@ -72,507 +132,106 @@ skinparam useBetaStyle false
   <font color=$WARNING><b>$msg
 !endprocedure
 
-!procedure $primary_scheme()
-	FontColor $PRIMARY_TEXT
-	BorderColor $PRIMARY
-	BackgroundColor $BGCOLOR
+!procedure $neutral_scheme()
+	FontColor $NEUTRAL1000
+	BorderColor $NEUTRAL0800
+	BackgroundColor $NEUTRAL0050
+    Shadowing 1.0
+
+    '' Iris theming
+    '' ---------------------------------
+	FontColor<<iris>> $NEUTRAL0025
+	BorderColor<<iris>> $NEUTRAL0025
+	BackgroundColor<<iris>> $PRIMARY0600
 !endprocedure
 
-''
-'' Style settings
-''
+
+'' Default settings
+'' -----------------------------------------------------------------------------
+
+skinparam backgroundColor $BG_COLOR
+skinparam defaultFontName "Open Sans"
+skinparam defaultFontSize 16
+skinparam defaultTextAlignment left
+skinparam dpi 100
+skinparam roundcorner 15
+
+
+hide <<iris>> stereotype
+
+'Controls how lines are drawn in PlantUML
+'values: ortho, polyline, splines (default)
+skinparam linetype polyline
+' skinparam linetype ortho
+' skinparam linetype splines
+
+'Distance between elements (vertically, default: 30)
+skinparam nodesep 40
+
+'Distance between elements (horizontally, default: 30)
+skinparam ranksep 40
+
+'Controls the padding surrounding text
+skinparam padding 8
+
+
+'Line below ensures all classes have the same width in UML class diagram
+'skinparam SameClassWidth true
+
+
+'' Main element
+'' -----------------------------------------------------------------------------
+
 <style>
-  root {
-    BackgroundColor $BGCOLOR
-    FontColor $PRIMARY_TEXT
-    HyperLinkColor $ORANGE
-    LineColor $PRIMARY_DARK
+
+root {
+    HyperLinkColor $SIGNATURE0600
+    LineColor $NEUTRAL0800
     LineThickness 1
-    Margin 10
-    Padding 6
-    Shadowing 0.0
-  }
-  node {
-   Padding 15
-   roundcorner 20
-   BackgroundColor $BGCOLOR
-  }
-  caption {
-    LineThickness 0
-  }
-  footer {
-    LineThickness 0
-  }
-  groupHeader {
-    BackgroundColor $SECONDARY
-    FontColor $INFO
-    FontStyle bold
-  }
-  header {
-    LineThickness 0
-  }
-  referenceHeader {
-    BackgroundColor $BGCOLOR
-    FontColor $DARK
-    FontStyle bold
-  }
-  separator {
-    BackgroundColor $FGCOLOR
-    FontColor $BGCOLOR
-    FontStyle bold
-  }
-  title {
-	FontSize 20
-	BorderRoundCorner            8
-	BorderThickness 	         1
-	BackgroundColor  $BGCOLOR
-	FontColor $PRIMARY
-	BorderColor $SECONDARY
-  }
-  nwdiagDiagram {
-	network {
-		$primary_scheme()    
-		LineColor $PRIMARY
-		LineThickness 1.0
-		FontColor $PRIMARY_DARK
-	}
-	server {
-		$primary_scheme()
-	}
-	arrow {
-		FontColor $PRIMARY_DARK
-		LineColor $PRIMARY_DARK
-	}
-	group {
-		BackGroundColor $LIGHT
-		LineColor $LIGHT_DARK
-		LineThickness 2.0
-		Margin 5
-		Padding 5
-	}
-  }
-  ganttDiagram {
-	task {
-		$primary_scheme()
-		LineColor $PRIMARY
-		Margin 10
-		Padding 6
-	}
-	note {
-		FontColor $INFO_TEXT
-		LineColor $INFO_DARK
-		BackGroundColor $BGCOLOR
-	}
-	separator {
-		LineColor $SECONDARY_DARK
-		BackGroundColor $BGCOLOR
-		FontColor $SECONDARY_TEXT
-	}
-	milestone {
-		FontColor $INFO
-		FontSize 16
-		FontStyle italic
-		BackGroundColor $SECONDARY
-		LineColor $SECONDARY_DARK
-	}
-	timeline {
-		BackgroundColor $SECONDARY
-		FontColor $SECONDARY_TEXT
-	}
-	closed {
-		BackgroundColor $WARNING_DARK
-		FontColor $WARNING_TEXT
-	}
-  }
+    FontColor $TEXT
+    Margin 40
+}
+
 </style>
-''
-'' Global Default Values
-''
-skinparam defaultFontName       "Verdana"
-skinparam defaultFontSize       12
-skinparam dpi                   100
-skinparam shadowing             false
-skinparam roundcorner           8
-skinparam ParticipantPadding    40
-skinparam BoxPadding            40
-skinparam Padding               5
-skinparam ArrowColor            $GRAY
-skinparam stereotype {
-    CBackgroundColor $SECONDARY_LIGHT
-    CBorderColor $SECONDARY_DARK
-    ABackgroundColor $SUCCESS_LIGHT
-    ABorderColor $SUCCESS_DARK
-    IBackgroundColor $DANGER_LIGHT
-    IBorderColor $DANGER_DARK
-    EBackgroundColor $WARNING_LIGHT
-    EBorderColor $WARNING_DARK
-    NBackgroundColor $INFO_LIGHT
-    NBorderColor $INFO_DARK
-}
-skinparam title {
-	FontColor	                 $PRIMARY
-	BorderColor	                 $SECONDARY_DARK
-	FontSize	    	         20
-	BorderRoundCorner            8
-	BorderThickness 	         1
-	BackgroundColor              $BGCOLOR
-}
 
-skinparam legend {
-	BackgroundColor $BGCOLOR
-	BorderColor $SECONDARY_DARK
-	FontColor $DARK
-}
 
-!startsub swimlane
-skinparam swimlane {
-	BorderColor $INFO
-	BorderThickness 2
-	TitleBackgroundColor  $SECONDARY_LIGHT-$SECONDARY
-	TitleFontColor $PRIMARY
-}
-!endsub
-
-!startsub activity
-
-skinparam activity {
-	$primary_scheme()
-	BarColor $SUCCESS
-	StartColor $INFO
-	EndColor $INFO
-	''
-	DiamondBackgroundColor $BGCOLOR
-  	DiamondBorderColor $SECONDARY_DARK
-	DiamondFontColor $SECONDARY_TEXT
-}
-!endsub
-
-!startsub participant
-
-skinparam participant {
-	$primary_scheme()
-	ParticipantBorderThickness 2
-}
-!endsub
-
-!startsub actor
-
-skinparam actor {
-	$primary_scheme()
-}
-!endsub
-
-!startsub arrow
-
-skinparam arrow {
-	Thickness 3
-	Color $PRIMARY
-	FontColor $FGCOLOR
-}
-!endsub
-
-!startsub sequence
-
-skinparam sequence {
-	BorderColor $PRIMARY
-	' For some reason sequence title font color does not pick up from global
-	TitleFontColor $PRIMARY
-	BackgroundColor $BGCOLOR
-	StartColor $PRIMARY
-	EndColor $PRIMARY
-	''
-	BoxBackgroundColor $BGCOLOR
-	BoxBorderColor $GRAY
-	BoxFontColor $DARK
-	''
-	DelayFontColor $DARK
-	''
-	LifeLineBorderColor $SECONDARY_DARK
-	LifeLineBorderThickness 2
-	LifeLineBackgroundColor $BGCOLOR
-	''
-	GroupBorderColor $GRAY
-	GroupFontColor $DARK
-	GroupHeaderFontColor $INFO_TEXT
-	''
-	DividerBackgroundColor $LIGHT
-    DividerBorderColor $GRAY
-    DividerBorderThickness 2
-    DividerFontColor $DARK
-	''
-	ReferenceBackgroundColor $BGCOLOR
-	ReferenceBorderColor $GRAY
-	ReferenceFontColor $DARK
-	ReferenceHeaderFontColor $INFO_TEXT
-	''
-	StereotypeFontColor $PRIMARY_TEXT
-}
-!endsub
-
-!startsub partition
-
-skinparam partition {
-	BorderColor $PRIMARY
-	FontColor $PRIMARY
-	BackgroundColor $BGCOLOR
-}
-!endsub
-
-!startsub collections
-
-skinparam collections {
-	$primary_scheme()
-}
-!endsub
-
-!startsub control
-
-skinparam control {
-	$primary_scheme()
-}
-!endsub
-
-!startsub entity
-
-skinparam entity {
-	$primary_scheme()
-}
-!endsub
-
-!startsub boundary
-
-skinparam boundary {
-	$primary_scheme()
-}
-!endsub
-
-!startsub agent
-
-skinparam agent {
-	BackgroundColor $BGCOLOR
-	BorderColor #999999
-	FontColor #333333
-}
-!endsub
-
-!startsub note
-
-skinparam note {
-	BorderThickness 1
-	BackgroundColor $BGCOLOR
-	BorderColor $INFO
-	FontColor $INFO_TEXT
-}
-!endsub
-
-!startsub artifact
-
-skinparam artifact {
-	BackgroundColor $BGCOLOR
-	BorderColor $GRAY
-	FontColor $GRAY
-}
-!endsub
-
-!startsub component
+'' Single elements definitions
+'' -----------------------------------------------------------------------------
 
 skinparam component {
-	$primary_scheme()
-	' BackgroundColor $BGCOLOR
-	' BorderColor  $SUCCESS
-	' FontColor $SUCCESS_TEXT
+    $neutral_scheme()
 }
-!endsub
-
-!startsub interface
-
-skinparam interface {
-	BackgroundColor  $BGCOLOR
-	BorderColor  $DANGER
-	FontColor $DARK
-}
-!endsub
-
-!startsub storage
-
-skinparam storage {
-	BackgroundColor $BGCOLOR
-  	BorderColor $WARNING
-	FontColor $WARNING_TEXT
-}
-!endsub
-
-!startsub node
-
-skinparam node {
-	BackgroundColor $BGCOLOR
-	BorderColor $DARK
-	FontColor $DARK
-}
-!endsub
-
-!startsub cloud
-
-skinparam cloud {
-	BackgroundColor #F2FCFE-#eeeeee
-	BorderColor #F2FCFE
-	FontColor $DARK
-}
-!endsub
-
-!startsub database
 
 skinparam database {
-	$primary_scheme()
+    $neutral_scheme()
 }
-!endsub
-
-!startsub class
-
-skinparam class {
-	$primary_scheme()
-	FontColor $LIGHT
-	HeaderBackgroundColor $PRIMARY-$PRIMARY_DARK
-	StereotypeFontColor $DARK
-	BorderThickness 1
-	AttributeFontColor $DARK
-	AttributeFontSize 11
-}
-!endsub
-
-!startsub object
-
-skinparam object {
-	$primary_scheme()
-	StereotypeFontColor $DARK
-	BorderThickness 1
-	AttributeFontColor $SECONDARY_DARK
-	AttributeFontSize 11
-}
-!endsub
-
-!startsub usecase
-
-skinparam usecase {
-	$primary_scheme()
-	BorderThickness 2
-	StereotypeFontColor $PRIMARY
-}
-!endsub
-
-!startsub rectangle
 
 skinparam rectangle {
-	$primary_scheme()
-	BorderThickness 2
-	StereotypeFontColor $PRIMARY
+    $neutral_scheme()
 }
-!endsub
 
-!startsub package
-
-skinparam package {
-	BackgroundColor $BGCOLOR
-  	BorderColor $PRIMARY
-	FontColor $PRIMARY
-	BorderThickness 2
+skinparam node {
+    $neutral_scheme()
 }
-!endsub
-
-!startsub folder
-
-skinparam folder {
-	BackgroundColor $BGCOLOR
-  	BorderColor $WARNING
-	FontColor $WARNING
-	BorderThickness 2
-}
-!endsub
-
-!startsub frame
 
 skinparam frame {
-	BackgroundColor $BGCOLOR
-  	BorderColor $INFO
-	FontColor $INFO_TEXT
-	BorderThickness 2
+    $neutral_scheme()
 }
-!endsub
 
-!startsub state
-
-skinparam state {
-	$primary_scheme()
-	StartColor $INFO
-	EndColor $INFO
-	AttributeFontColor $SECONDARY_TEXT
-	AttributeFontSize 11
+skinparam actor {
+    $neutral_scheme()
+    Shadowing 0
 }
-!endsub
 
-!startsub queue
-
-skinparam queue {
-	$primary_scheme()
-}
-!endsub
-
-!startsub card
-
-skinparam card {
-	BackgroundColor $BGCOLOR
-	BorderColor $INFO
-	FontColor $INFO_TEXT
-}
-!endsub
-
-!startsub file
-
-skinparam file {
-	BackgroundColor $BGCOLOR
-	BorderColor $GRAY
-	FontColor $GRAY
-}
-!endsub
-
-!startsub stack
-
-skinparam stack {
-	$primary_scheme()
-}
-!endsub
-
-!if (%variable_exists("LEGACY"))
-!$LEGACY = "true"
-!endif
-
-!if (%getenv("LEGACY") == "true")
-!$LEGACY = "true"
-!endif
-
-!if (%variable_exists("$LEGACY"))
-
-skinparam useBetaStyle true
-
-!startsub mindmap
+''
+'' Group definition should be placed *after* single elements definition
+''
 
 <style>
-style mindmapDiagram {
-  'Padding 8
-  Margin 8
-  LineThickness 2.0
-  FontColor $PRIMARY_TEXT
-  LineColor $SECONDARY
-  BackGroundColor $PRIMARY_LIGHT-$PRIMARY
+
+group {
+    BackgroundColor $NEUTRAL0100
+    Shadowing 0
 }
-wbsDiagram {
-  'Padding 8
-  Margin 8
-  LineThickness 2.0
-  FontColor $PRIMARY_TEXT
-  LineColor $PRIMARY
-  BackGroundColor $PRIMARY_LIGHT-$PRIMARY
-}
+
 </style>
-!endsub
-!endif
