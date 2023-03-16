@@ -234,4 +234,28 @@ group {
     Shadowing 0
 }
 
+
+yamlDiagram {
+  node {
+    BackGroundColor $NEUTRAL0050
+    LineColor $NEUTRAL0800
+    FontName "DejaVu Sans"
+    FontColor $TEXT
+    FontSize 12
+    RoundCorner 0
+    LineThickness 1
+    separator {
+      LineThickness 0.5
+      LineStyle 1-5
+    }
+  }
+  arrow {
+    LineColor $NEUTRAL0800
+  }
+  highlight {
+    BackGroundColor $PRIMARY0600
+    FontColor white
+  }
+}
+
 </style>
