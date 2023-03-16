@@ -1,9 +1,5 @@
+'' Color theme for PlantUML
 ''
-'' Cerulean theme based off of the bootstrap theme of the same name
-'' https://bootswatch.com/cerulean/
-''
-'' Author: Brett Schwarz
-'' Copyright (c) 2019 by Brett Schwarz
 
 !$THEME = "u"
 
@@ -150,7 +146,7 @@ skinparam useBetaStyle true
 '' -----------------------------------------------------------------------------
 
 skinparam backgroundColor $BG_COLOR
-skinparam defaultFontName "Open Sans"
+skinparam defaultFontName "DejaVu Sans"
 skinparam defaultFontSize 16
 skinparam defaultTextAlignment left
 skinparam dpi 100
