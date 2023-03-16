@@ -107,7 +107,7 @@ skinparam useBetaStyle true
 
 '' -----------------------------------------------------------------------------
 
-!$BG_COLOR = $NEUTRAL0025
+!$BG_COLOR = white
 !$FG_COLOR = $NEUTRAL0800
 !$TEXT = $NEUTRAL0800
 !$REVERSE_TEXT = $NEUTRAL0025
@@ -145,7 +145,7 @@ skinparam useBetaStyle true
 '' Default settings
 '' -----------------------------------------------------------------------------
 
-skinparam backgroundColor white
+skinparam backgroundColor $BG_COLOR
 skinparam defaultFontName "DejaVu Sans"
 skinparam defaultFontSize 16
 skinparam defaultTextAlignment left
