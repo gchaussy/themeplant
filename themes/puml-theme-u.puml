@@ -145,7 +145,7 @@ skinparam useBetaStyle true
 '' Default settings
 '' -----------------------------------------------------------------------------
 
-skinparam backgroundColor $BG_COLOR
+skinparam backgroundColor white
 skinparam defaultFontName "DejaVu Sans"
 skinparam defaultFontSize 16
 skinparam defaultTextAlignment left
