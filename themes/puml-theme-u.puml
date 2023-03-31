@@ -146,7 +146,7 @@ skinparam useBetaStyle true
 '' -----------------------------------------------------------------------------
 
 skinparam backgroundColor $BG_COLOR
-skinparam defaultFontName "DejaVu Sans"
+skinparam defaultFontName "Calibri"
 skinparam defaultFontSize 16
 skinparam defaultTextAlignment left
 skinparam dpi 100
