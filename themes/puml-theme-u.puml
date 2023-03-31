@@ -139,6 +139,9 @@ skinparam useBetaStyle true
 	FontColor<<iris>> $NEUTRAL0025
 	BorderColor<<iris>> $NEUTRAL0025
 	BackgroundColor<<iris>> $PRIMARY0600
+
+	BorderColor<<iris2>> $NEUTRAL0900
+	BackgroundColor<<iris2>> $SECONDARY0400
 !endprocedure
 
 
@@ -154,6 +157,7 @@ skinparam roundcorner 15
 
 
 hide <<iris>> stereotype
+hide <<iris2>> stereotype
 
 'Controls how lines are drawn in PlantUML
 'values: ortho, polyline, splines (default)
