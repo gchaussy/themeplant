@@ -147,7 +147,7 @@ skinparam useBetaStyle true
 
 skinparam backgroundColor $BG_COLOR
 skinparam defaultFontName "Calibri"
-skinparam defaultFontSize 16
+skinparam defaultFontSize 12
 skinparam defaultTextAlignment left
 skinparam dpi 100
 skinparam roundcorner 15
