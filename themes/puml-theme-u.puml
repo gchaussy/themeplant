@@ -185,11 +185,16 @@ skinparam padding 8
 <style>
 
 root {
-    HyperLinkColor $SIGNATURE0600
+    HyperLinkColor $PRIMARY0600
     LineColor $NEUTRAL0800
     LineThickness 1
     FontColor $TEXT
     Margin 40
+}
+
+
+.iris {
+    HyperLinkColor $NEUTRAL0025
 }
 
 </style>
