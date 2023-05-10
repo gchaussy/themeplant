@@ -232,6 +232,76 @@ skinparam actor {
     Shadowing 0
 }
 
+!startsub participant
+
+skinparam participant {
+	$neutral_scheme()
+	BorderThickness 1
+}
+!endsub
+
+!startsub sequence
+skinparam sequence {
+	/'
+	 ' ArrowThickness 2
+	 ' BorderColor $PRIMARY
+	 '/
+	' For some reason sequence title font color does not pick up from global
+	/'
+	 ' TitleFontColor $PRIMARY
+	 ' BackgroundColor $PUML_BGCOLOR
+	 ' StartColor $PRIMARY
+	 ' EndColor $PRIMARY
+	 '/
+	''
+	/'
+	 ' BoxBackgroundColor $PUML_BGCOLOR
+	 ' BoxBorderColor $DARK
+	 ' BoxFontColor $DARK
+	 '/
+	''
+	/'
+	 ' DelayFontColor $DARK
+	 '/
+	''
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor $PRIMARY0600
+	LifeLineBorderColor $PRIMARY0600
+	''
+	/'
+	 ' GroupBorderColor $DARK
+	 ' GroupFontColor $DARK
+	 ' GroupHeaderFontColor $INFO
+	 '/
+	GroupBackgroundColor white
+	GroupBodyBackgroundColor white
+	/'
+	 ' GroupHeaderBackgroundColor $PUML_BGCOLOR
+	 '/
+	''
+	/'
+	 ' DividerBackgroundColor $DARK
+     ' DividerBorderColor $DARK
+     ' DividerBorderThickness 2
+     ' DividerFontColor $LIGHT
+	 '/
+	''
+	/'
+	 ' ReferenceBackgroundColor $PUML_BGCOLOR
+	 ' ReferenceBorderColor $DARK
+	 ' ReferenceFontColor $DARK
+	 ' ReferenceHeaderFontColor $INFO
+	 ' ReferenceHeaderBackgroundColor $SECONDARY
+	 '/
+	''
+	/'
+	 ' StereotypeFontColor $PRIMARY_TEXT
+	 ' StereotypeFontSize 12
+	 '/
+}
+!endsub
+
+
 ''
 '' Group definition should be placed *after* single elements definition
 ''
@@ -266,5 +336,4 @@ yamlDiagram {
     FontColor white
   }
 }
-
 </style>
